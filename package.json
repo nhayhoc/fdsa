@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "npm run build && cross-env NODE_ENV=production node server.js"
+    "start": "npm run build && cross-env NODE_ENV=production node server.js",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -23,6 +24,7 @@
     "path": "^0.12.7",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.27.1"
   }
