@@ -21,7 +21,7 @@ import Link from 'next/link'
 class index extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { email: "", password="", repeatPassword="" };
+		this.state = { email: "", password:"", repeatPassword:"" };
 		// this.handleClick = this.handleClick.bind(this);
 	}
 
